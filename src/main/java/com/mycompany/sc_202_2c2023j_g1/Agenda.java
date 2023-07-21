@@ -10,7 +10,7 @@ package com.mycompany.sc_202_2c2023j_g1;
  */
 public class Agenda {
     private static final int horarioInicio = 8;
-    private static final int horarioFin = 18;
+    private static final int horarioFin = 7;
 
     private final Barbero[] barberos;
     private final Cliente[][] agenda;
