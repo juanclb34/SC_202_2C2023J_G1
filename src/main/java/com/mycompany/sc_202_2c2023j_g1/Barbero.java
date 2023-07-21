@@ -9,6 +9,7 @@ public class Barbero {
     
     private String nombre;
     private String horaAlmuerzo;
+    private String citas;
 
     public Barbero(String nombre, String horaAlmuerzo) {
         this.nombre = nombre;
