@@ -12,6 +12,6 @@ public class SC_202_2C2023J_G1 {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-           System.out.println("Estoy probando");
+           System.out.println("Hello World!");
     }
 }
