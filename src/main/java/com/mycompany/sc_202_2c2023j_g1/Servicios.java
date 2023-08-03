@@ -13,6 +13,10 @@ public class Servicios {
     private static final double PRECIO_FIN_DE_SEMANA = 3000; // Precio por hora durante el fin de semana
     private static final double IVA = 0.13; // Tasa de impuesto IVA del 13%
 
+    static double calcularCostoTotal(boolean esFinDeSemana, int rangoHoras) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     private double precioHora;
     private double precioConIVA;
 

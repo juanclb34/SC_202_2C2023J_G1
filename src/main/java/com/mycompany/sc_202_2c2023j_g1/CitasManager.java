@@ -10,8 +10,9 @@ import java.util.*;
  * @author Mercedes León
  */
 public class CitasManager {
+   
     private Map<Barbero, Map<String, Cliente>> agenda;
-
+   
     public CitasManager() {
         agenda = new HashMap<>();
     }

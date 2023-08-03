@@ -4,6 +4,8 @@
  */
 package com.mycompany.sc_202_2c2023j_g1;
 
+import java.util.Calendar;
+
 /**
  *
  * @author Mercedes León
@@ -14,6 +16,7 @@ public class Cliente {
     private final String cita;
     private final int rangoHoras;
     private double costoTotal;
+    
 
     public Cliente(String nombre, String telefono, String cita, int rangoHoras) {
         this.nombre = nombre;
@@ -45,5 +48,11 @@ public class Cliente {
 
     public void setCostoTotal(double costoTotal) {
         this.costoTotal = costoTotal;
+    }
+    
+    
+
+    Calendar getFechaCita() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
