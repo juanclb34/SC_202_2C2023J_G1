@@ -4,11 +4,23 @@
  */
 package com.mycompany.sc_202_2c2023j_g1;
 
+import java.util.Calendar;
+
 /**
  *
  * @author Mercedes León
  */
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+public class Cliente {
+    private final String nombre;
+    private final String telefono;
+    private final String cita;
+    private final int rangoHoras;
+    private double costoTotal;
+    
+>>>>>>> origin/main
 
 class Cliente {
     private String nombre;
@@ -57,6 +69,12 @@ class Cliente {
         System.out.println("Día de atención: " + diaAtencion);
         System.out.println("Rango de horas: " + rangoHoras);
         System.out.println("Precio por hora: " + precioHora);
+    }
+    
+    
+
+    Calendar getFechaCita() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 
