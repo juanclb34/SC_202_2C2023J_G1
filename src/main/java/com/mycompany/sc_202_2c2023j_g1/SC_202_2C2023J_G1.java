@@ -6,34 +6,24 @@ package com.mycompany.sc_202_2c2023j_g1;
 
 /**
  *
- * @author Usuario
+ * @author Juan Carlos
  */
 public class SC_202_2C2023J_G1 {
 
     public static void main(String[] args){
-        
-        int numBarberos = 5;
-        int horaInicio = 8;
-        int horaFin = 18;
 
-        Barbero[] barberos = new Barbero[numBarberos];
-        barberos[0] = new Barbero("Barbero 1", 12); // Ejemplo: el Barbero 1 sale a almorzar a las 12PM
-        barberos[1] = new Barbero("Barbero 2", 1);  // Ejemplo: el Barbero 1 sale a almorzar a las 1PM
-        barberos[2] = new Barbero("Barbero 3", 2);  // Ejemplo: el Barbero 1 sale a almorzar a las 2PM
-        barberos[3] = new Barbero("Barbero 4", 3);  // Ejemplo: el Barbero 1 sale a almorzar a las 3PM
-        barberos[4] = new Barbero("Barbero 5", 4);  // Ejemplo: el Barbero 1 sale a almorzar a las 4PM
-        
+        Barbero[] barberos = new Barbero[5];
 
-        boolean[][] calendario = new boolean[numBarberos][horaFin - horaInicio + 1];
-        for (int i = 0; i < numBarberos; i++) {
-            for (int j = 0; j < horaFin - horaInicio + 1; j++) {
-                calendario[i][j] = true; // Todas las citas disponibles inicialmente
-            }
+        barberos[0] = new Barbero("Barbero 1", 13);
+        barberos[1] = new Barbero("Barbero 2", 12);
+        barberos[2] = new Barbero("Barbero 3", 14);
+        barberos[3] = new Barbero("Barbero 4", 13);
+        barberos[4] = new Barbero("Barbero 5", 12);
+
+        for (Barbero barbero : barberos){
+            System.out.println("Nombre del barbero: " + barbero.getNombre());
+            System.out.println("Hora de almuerzo: " + barbero.getHoraAlmuerzo());
+            System.out.println();
         }
-
-    }
+    }  
 }
-
-    
-    
-

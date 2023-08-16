@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.sc_202_2c2023j_g1;
 
 /**
@@ -29,6 +26,4 @@ public class Servicios {
         double precioConIVA = precioHora * (1 + IVA);
         return precioConIVA;
     }
-
 }
-

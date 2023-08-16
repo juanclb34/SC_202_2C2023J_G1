@@ -8,19 +8,21 @@ package com.mycompany.sc_202_2c2023j_g1;
  *
  * @author Mercedes León
  */
-public class Cliente {
-    private final String nombre;
-    private final String telefono;
-    private final String cita;
-    private final int rangoHoras;
-    private double costoTotal;
+import java.util.Scanner;
 
-    public Cliente(String nombre, String telefono, String cita, int rangoHoras) {
+class Cliente {
+    private String nombre;
+    private String telefono;
+    private String diaAtencion;
+    private int rangoHoras;
+    private double precioHora;
+
+    public Cliente(String nombre, String telefono, String diaAtencion, int rangoHoras) {
         this.nombre = nombre;
         this.telefono = telefono;
-        this.cita = cita;
+        this.diaAtencion = diaAtencion;
         this.rangoHoras = rangoHoras;
-        this.costoTotal = 0;
+        this.precioHora = calcularPrecioHora(diaAtencion);
     }
 
     public String getNombre() {
@@ -31,19 +33,30 @@ public class Cliente {
         return telefono;
     }
 
-    public String getCita() {
-        return cita;
+    public String getDiaAtencion() {
+        return diaAtencion;
     }
 
     public int getRangoHoras() {
         return rangoHoras;
     }
 
-    public double getCostoTotal() {
-        return costoTotal;
+    public double getPrecioHora() {
+        return precioHora;
     }
 
-    public void setCostoTotal(double costoTotal) {
-        this.costoTotal = costoTotal;
+    private double calcularPrecioHora(String diaAtencion) {
+        double precioBase = diaAtencion.equalsIgnoreCase("sábado") || diaAtencion.equalsIgnoreCase("domingo") ? 3000 : 2500;
+        double precioConIVA = precioBase * 1.13;
+        return precioConIVA;
+    }
+
+    public void mostrarInformacion() {
+        System.out.println("Nombre del cliente: " + nombre);
+        System.out.println("Teléfono: " + telefono);
+        System.out.println("Día de atención: " + diaAtencion);
+        System.out.println("Rango de horas: " + rangoHoras);
+        System.out.println("Precio por hora: " + precioHora);
     }
 }
+

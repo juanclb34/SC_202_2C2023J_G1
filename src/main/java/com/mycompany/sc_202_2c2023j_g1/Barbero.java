@@ -9,6 +9,7 @@ public class Barbero {
     
        private String nombre;
     private int horaAlmuerzo;
+    private Iterable<String> horarios;
 
     public Barbero(String nombre, int horaAlmuerzo) {
         this.nombre = nombre;
@@ -30,6 +31,14 @@ public class Barbero {
 
     public void setHoraAlmuerzo(int horaAlmuerzo) {
         this.horaAlmuerzo = horaAlmuerzo;
+    }
+     public boolean estaDisponible(String diaAtencion, int rangoHoras) {
+        for (String horario : horarios) {
+            if (horario.equalsIgnoreCase(diaAtencion) && rangoHoras <= 8) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 
