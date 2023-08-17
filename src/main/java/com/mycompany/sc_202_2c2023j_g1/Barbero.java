@@ -7,9 +7,12 @@ package com.mycompany.sc_202_2c2023j_g1;
 
 
 public class Barbero {
+    
+    //Atributos
     private String nombre;
     private int horaAlmuerzo;
-
+    
+    //Uso de getters y setters
     public Barbero(String nombre, int horaAlmuerzo) {
         this.nombre = nombre;
         this.horaAlmuerzo = horaAlmuerzo;

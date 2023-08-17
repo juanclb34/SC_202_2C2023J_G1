@@ -20,7 +20,7 @@ public class SistemaGestionBarberia {
     private static final String[][] nombresClientes = new String[NUM_BARBEROS][NUM_HORAS];
     private static final String[][] telefonosClientes = new String[NUM_BARBEROS][NUM_HORAS];
     
-    // Nueva función para realizar la reservación de espacios
+    //función para realizar la reservación de espacios
     private static void reservarEspacio(boolean[][][] calendario) {
         Scanner scanner = new Scanner(System.in);
 
@@ -70,7 +70,7 @@ public class SistemaGestionBarberia {
         }
     }
 
-    // Nueva función para encontrar un barbero disponible en el día y rango de horas especificado
+    //función para encontrar un barbero disponible en el día y rango de horas especificado
     private static int encontrarBarberoDisponible(boolean[][][] calendario, int dia, int horaInicio, int horaFin) {
         for (int barbero = 0; barbero < NUM_BARBEROS; barbero++) {
             boolean disponible = true;
@@ -89,7 +89,7 @@ public class SistemaGestionBarberia {
     
     
     
-     // Nueva función para realizar la devolución de espacios
+     //función para realizar la devolución de espacios
     private static void devolverEspacio(boolean[][][] calendario) {
         Scanner scanner = new Scanner(System.in);
 
@@ -124,7 +124,7 @@ public class SistemaGestionBarberia {
     }
     
     
-    // Nueva función para revisar la agenda de un barbero
+    //función para revisar la agenda de un barbero
     private static void revisarAgenda(boolean[][][] calendario) {
         Scanner scanner = new Scanner(System.in);
 
@@ -164,7 +164,7 @@ public class SistemaGestionBarberia {
         System.out.println("Monto total a recaudar ese día: " + totalRecaudado + " colones");
     }
 
-    // Función auxiliar para verificar si un día es fin de semana
+    // Función para verificar si un día es fin de semana
     private static boolean esFinDeSemana(int dia) {
         // Supongamos que los días 6 (sábado) y 7 (domingo) son fines de semana
         return dia == 6 || dia == 7;

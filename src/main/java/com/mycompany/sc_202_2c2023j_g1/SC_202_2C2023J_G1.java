@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class SC_202_2C2023J_G1{
   
-    private static final int NUM_HORAS = 10; // 10 horas laborales (8:00 - 17:30)
+    private static final int NUM_HORAS = 10; // 10 horas laborales (8:00 - 17:00)
     private static final int NUM_BARBEROS = 5; // 5 barberos
     private static final String[] nombresBarberos = new String[NUM_BARBEROS];
     private static final int[] horasAlmuerzo = new int[NUM_BARBEROS];
@@ -52,7 +52,7 @@ public static void main(String[] args) {
         scanner.close();
     }
     
-    // Nueva función para administrar el personal
+    // función para administrar el personal
     private static void administrarPersonal() {
         Scanner scanner = new Scanner(System.in);
 
@@ -76,7 +76,7 @@ public static void main(String[] args) {
         }
     }
 
-    // Nueva función para registrar el horario de almuerzo de un barbero
+    // función para registrar el horario de almuerzo de un barbero
     private static void registrarHorarioAlmuerzo() {
         Scanner scanner = new Scanner(System.in);
 
