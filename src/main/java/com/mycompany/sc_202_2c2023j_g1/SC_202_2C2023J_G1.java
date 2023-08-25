@@ -72,7 +72,7 @@ import javax.swing.JOptionPane;
     private static void registrarBarbero() {
         int barbero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el número de barbero (1-5):"));
         String nombre = JOptionPane.showInputDialog("Ingresa el nombre del barbero:");
-        int horaAlmuerzo = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la hora de almuerzo del barbero (8-17):"));
+        int horaAlmuerzo = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la hora de almuerzo del barbero (8-18):"));
 
         if (horaAlmuerzo < HORARIO_INICIO || horaAlmuerzo >= HORARIO_FIN) {
             JOptionPane.showMessageDialog(null, "Hora de almuerzo inválida. Debe estar entre las 8am y las 6pm.");
